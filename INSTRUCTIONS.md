@@ -56,7 +56,7 @@ You'll be tasked with fixing and building configuration relating to Docker, Terr
   - The resource should use a **free-tier AMI**
   - The resource should use a **free-tier Instance Type**
 - Both **Ansible Playbooks** should be executed in order to run the application
-- It's your choice how you ensure the **Docker Images** are accessible on the provisioned instance
+- It's your choice how you ensure the **Docker Images** via the **docker-compose** are accessible on the provisioned instance
   - However it must be documented in your `README` how the marker can replicate your process
 
 ### Code Base
@@ -80,6 +80,7 @@ You'll be tasked with fixing and building configuration relating to Docker, Terr
 
 - Both microservices should be established as their own **Docker Image** using your own Docker account, i.e. `<your-docker-username>/tour-de-france-db:0.0.1.RELEASE`
 - The two microservices should be deployed using a `docker-comose.yml` file which should be present in your assessment repository when you push your final code
+- Remember to build your **docker images** using the correct platform architecture: **linux/amd64**
 
 ### Ansible
 
