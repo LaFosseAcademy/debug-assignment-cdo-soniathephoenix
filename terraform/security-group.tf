@@ -1,6 +1,6 @@
 resource "aws_security_group" "http_server_sg" {
   name   = "http_server_sg"
-  vpc_id = ""
+  vpc_id = "vpc-0f9fc70fc50df5a0d"
   tags = {
     name = "http_server_sg"
   }
